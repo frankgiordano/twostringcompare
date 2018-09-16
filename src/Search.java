@@ -2,29 +2,27 @@
 public class Search {
 	
 	public static boolean sequentialSearch(String sourceString, String searchString) {
-		
-		if (sourceString == null || sourceString.equals("") || searchString == null || searchString.equals("")) {
+
+		if (sourceString == null || "".equals(sourceString) || searchString == null || "".equals(searchString)) {
 			return false;
 		}
-		
+
 		int foundcount = 0;
-		
+
 		for (int i = 0; i < searchString.length(); i++) {
-			
 			for (int j = 0; j < sourceString.length(); j++) {
-			
 				if (sourceString.charAt(j) == searchString.charAt(i)) {
 					foundcount += 1;
 					break;
 				}
-			}		
+			}
 		}
-		
+
 		if (foundcount == (searchString.length()))
 			return true;
-		else 
+		else
 			return false;
-			
+
 	}
 	
 	public static boolean binarySearch(String sourceString, char find) {
@@ -33,7 +31,7 @@ public class Search {
 		int middle = 0;
 		int high = sourceString.length() - 1;
 		
-		if (sourceString == null || sourceString.equals("")) {
+		if (sourceString == null || "".equals(sourceString)) {
 			return false;
 		}
 	
