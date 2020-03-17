@@ -20,7 +20,6 @@ public class QuickSort {
                 i++;
                 j--;
             }
-
         }
 
         if (low < j)

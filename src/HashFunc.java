@@ -32,7 +32,6 @@ public class HashFunc {
                 // catch the null. this means non match.
                 return false;
             }
-
         }
 
         // Table.hashDisplay(cache);

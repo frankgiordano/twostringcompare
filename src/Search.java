@@ -43,7 +43,6 @@ public class Search {
                 low = middle + 1;
             } else
                 return true;
-
         }
 
         return false;
